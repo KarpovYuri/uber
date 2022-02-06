@@ -1,0 +1,10 @@
+.nav-menu__link {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav-menu__link:hover {
+  color: #fff;
+}

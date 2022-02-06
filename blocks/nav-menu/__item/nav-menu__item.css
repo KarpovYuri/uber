@@ -1,0 +1,8 @@
+.nav-menu__item {
+  border-right: 2px dotted #000;
+  padding-right: 28px;
+}
+
+.nav-menu__item:last-child {
+  border-right: none;
+}
