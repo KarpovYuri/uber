@@ -1,69 +1,30 @@
-@import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
-@import url(../blocks/page/page.css);
+
+@import url(../vendor/bootstrap-reboot.min.css);
+@import url(../vendor/bootstrap-grid.min.css);
+
+@import url(../blocks/container/container.css);
 
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/__image/logo__image.css);
+@import url(../blocks/logo/_place/logo_place_subheader.css);
+@import url(../blocks/logo/__img/logo__img.css);
 @import url(../blocks/logo/__text/logo__text.css);
-@import url(../blocks/logo/_place/logo_place_promo.css);
-
-@import url(../blocks/promo/promo.css);
-@import url(../blocks/promo/__container/promo__container.css);
-@import url(../blocks/promo/__title/promo__title.css);
-@import url(../blocks/promo/__title/_size/promo__title_size_h1.css);
-@import url(../blocks/promo/__title/_size/promo__title_size_h2.css);
-@import url(../blocks/promo/__simple-title/promo__simple-title.css);
-@import url(../blocks/promo/__text/promo__text.css);
-@import url(../blocks/promo/__text/_transform/promo__text_transform_uppercase.css);
 
 @import url(../blocks/button/button.css);
+@import url(../blocks/button/_place/button_place_subheader.css);
 @import url(../blocks/button/_place/button_place_promo.css);
-@import url(../blocks/button/_place/button_place_gift.css);
 
-@import url(../blocks/more/__text/more__text.css);
-@import url(../blocks/more/__image/more__image.css);
+@import url(../blocks/nav-menu/nav-menu.css);
+@import url(../blocks/nav-menu/__content/nav-menu__content.css);
+@import url(../blocks/nav-menu/__item/nav-menu__item.css);
+@import url(../blocks/nav-menu/__link/nav-menu__link.css);
 
-@import url(../blocks/divider/divider.css);
-@import url(../blocks/divider/_place/divider_place_waiting.css);
-@import url(../blocks/divider/_place/divider_place_finish.css);
+@import url(../blocks/subheader/subheader.css);
+@import url(../blocks/subheader/__contact/subheader__contact.css);
+@import url(../blocks/subheader/__call/subheader__call.css);
+@import url(../blocks/subheader/__phone/subheader__phone.css);
 
-@import url(../blocks/waiting/waiting.css);
-@import url(../blocks/waiting/__container/waiting__container.css);
-@import url(../blocks/waiting/__header/waiting__header.css);
-@import url(../blocks/waiting/__subheader/waiting__subheader.css);
-@import url(../blocks/waiting/__wrapper/waiting__wrapper.css);
-@import url(../blocks/waiting/__item/waiting__item.css);
-@import url(../blocks/waiting/__img/waiting__img.css);
-@import url(../blocks/waiting/__description/waiting__description.css);
-
-@import url(../blocks/optimization/optimization.css);
-@import url(../blocks/optimization/__container/optimization__container.css);
-@import url(../blocks/optimization/__header/optimization__header.css);
-@import url(../blocks/optimization/__paragraph/optimization__paragraph.css);
-@import url(../blocks/optimization/__paragraph/_font-weight/optimization__paragraph_font-weight_bold.css);
-@import url(../blocks/optimization/__img/optimization__img.css);
-
-@import url(../blocks/finish/finish.css);
-@import url(../blocks/finish/__container/finish__container.css);
-@import url(../blocks/finish/__header/finish__header.css);
-@import url(../blocks/finish/__wrapper/finish__wrapper.css);
-@import url(../blocks/finish/__round/finish__round.css);
-@import url(../blocks/finish/__description/finish__description.css);
-
-@import url(../blocks/gift/gift.css);
-@import url(../blocks/gift/__container/gift__container.css);
-@import url(../blocks/gift/__img/gift__img.css);
-@import url(../blocks/gift/__paragraph/gift__paragraph.css);
-
-@import url(../blocks/first-webinar/first-webinar.css);
-@import url(../blocks/first-webinar/__container/first-webinar__container.css);
-@import url(../blocks/first-webinar/__img/first-webinar__img.css);
-@import url(../blocks/first-webinar/__header/first-webinar__header.css);
-@import url(../blocks/first-webinar/__date/first-webinar__date.css);
-@import url(../blocks/first-webinar/__description/first-webinar__description.css);
-
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__container/footer__container.css);
-@import url(../blocks/footer/__link/footer__link.css);
-@import url(../blocks/footer/__separator/footer__separator.css);
-@import url(../blocks/footer/__phone/footer__phone.css);
+@import url(../blocks/promo/promo.css);
+@import url(../blocks/promo/__header/promo__header.css);
+@import url(../blocks/promo/__subheader/promo__subheader.css);
+@import url(../blocks/promo/__text/promo__text.css);
