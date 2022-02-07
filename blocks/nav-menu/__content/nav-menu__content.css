@@ -1,6 +1,6 @@
 .nav-menu__content {
   display: flex;
   justify-content: space-between;
-  padding: 13px 70px;
+  padding: 8px 78px 10px 78px;
   list-style-type: none;
 }

@@ -1,12 +1,10 @@
 @import url(../fonts/fonts.css);
+@import url(../vendor/normalize.css);
 
-@import url(../vendor/bootstrap-reboot.min.css);
-@import url(../vendor/bootstrap-grid.min.css);
-
+@import url(../blocks/fade-opacity/fade-opacity.css);
 @import url(../blocks/container/container.css);
 
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/_place/logo_place_subheader.css);
 @import url(../blocks/logo/__img/logo__img.css);
 @import url(../blocks/logo/__text/logo__text.css);
 
@@ -19,8 +17,12 @@
 @import url(../blocks/nav-menu/__item/nav-menu__item.css);
 @import url(../blocks/nav-menu/__link/nav-menu__link.css);
 
+@import url(../blocks/header/header.css);
+
 @import url(../blocks/subheader/subheader.css);
+@import url(../blocks/subheader/__container/subheader__container.css);
 @import url(../blocks/subheader/__contact/subheader__contact.css);
+@import url(../blocks/subheader/__tel/subheader__tel.css);
 @import url(../blocks/subheader/__call/subheader__call.css);
 @import url(../blocks/subheader/__phone/subheader__phone.css);
 

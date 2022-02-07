@@ -1,8 +1,3 @@
-.nav-menu__item {
-  border-right: 2px dotted #000;
-  padding-right: 28px;
-}
-
-.nav-menu__item:last-child {
-  border-right: none;
+.nav-menu__item:nth-of-type(2n) {
+  border-right: black 2px dotted;
 }

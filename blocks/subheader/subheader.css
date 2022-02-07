@@ -1,6 +1,8 @@
 .subheader {
   font-family: 'Roboto', serif;
   min-height: 84px;
+  width: 100%;
   background-color: rgba(0,0,0,.6);
   color: #fff;
+  position: absolute;
 }

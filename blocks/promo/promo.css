@@ -1,6 +1,7 @@
 .promo {
   min-height: 800px;
+  box-sizing: border-box;
   font-family: 'Roboto', serif;
   background: url('../../img/uber_bg.jpg') center center/cover no-repeat;
-  padding: 183px 0 187px;
+  padding: 135px 0 186px;
 }
