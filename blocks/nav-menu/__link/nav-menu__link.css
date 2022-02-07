@@ -1,6 +1,7 @@
 .nav-menu__link {
   color: #fff;
   font-size: 15px;
+  line-height: 31px;
   font-weight: 300;
   text-decoration: none;
 }

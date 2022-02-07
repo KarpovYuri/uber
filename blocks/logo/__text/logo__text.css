@@ -1,7 +1,8 @@
 .logo__text {
   margin: 0;
-  padding-top: 6px;
+  padding-top: 4px;
   opacity: .5;
   font-size: 13px;
   font-weight: 400;
+  letter-spacing: -0.02em;
 }

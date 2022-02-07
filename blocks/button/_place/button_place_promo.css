@@ -1,7 +1,8 @@
 .button_place_promo {
   display: block;
-  margin: 118px auto 0;
+  margin: 116px auto 0;
   height: 63px;
   width: 259px;
   font-size: 18px;
+  line-height: 67px;
 }
