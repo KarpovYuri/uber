@@ -26,6 +26,10 @@
   font-style: normal;
 }
 
+.root {
+  font-family: 'Roboto', serif;
+}
+
 .container {
   max-width: 1166px;
   margin: 0 auto;
@@ -48,8 +52,10 @@
 }
 
 .nav-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   background-color: #212121;
-  font-family: 'Roboto', serif;
   min-height: 50px;
 }
 
@@ -81,7 +87,7 @@
 }
 
 .subheader {
-  font-family: 'Roboto', serif;
+  top: 50px;
   min-height: 84px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -175,7 +181,6 @@
   min-height: 800px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', serif;
   background: url("../../img/uber_bg.jpg") center center/cover no-repeat;
   padding: 135px 0 186px;
 }
@@ -211,6 +216,10 @@
   padding: 71px 0 65px 0;
 }
 
+.reasons__container {
+  max-width: 1140px;
+}
+
 .reasons__label {
   margin: 0 auto;
   height: 24px;
@@ -225,8 +234,7 @@
 }
 
 .reasons__title {
-  margin-bottom: 0;
-  margin-top: 38px;
+  margin: 35px 0 16px;
   color: #222;
   font-size: 38px;
   font-weight: 700;
@@ -244,7 +252,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 35px;
+  margin-bottom: 26px;
+  padding: 0 6px 0 0;
+}
+
+.reason-block:nth-of-type(7n) {
+  margin-bottom: 0;
+}
+
+.reason-block:last-of-type {
+  margin-bottom: 0;
 }
 
 .reason-block__round {
@@ -273,6 +290,7 @@
   color: #1eacc7;
   font-size: 17px;
   font-weight: 400;
+  margin: 0;
 }
 
 .reason-block__text {
@@ -280,5 +298,6 @@
   font-size: 15px;
   font-weight: 300;
   line-height: 21px;
+  margin: 3px 0 0;
 }
 /*# sourceMappingURL=index.css.map */
