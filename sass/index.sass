@@ -1,9 +1,11 @@
 @import '_fonts'
+@import 'variables'
 
 .container
-  max-width: 1140px
+  max-width: 1166px
   margin: 0 auto
   box-sizing: border-box
+  padding: 0
 .fade-opacity
   transition: opacity 0.25s
   &:hover
@@ -17,35 +19,28 @@
   &__content
     display: flex
     justify-content: space-between
-    padding: 8px 78px 10px 78px
+    padding: 9px 98px 9px 83px
     list-style-type: none
   &__item:nth-of-type(2n)
     border-right: black 2px dotted
   &__link
-    color: #fff
+    color: $text-color
     font-size: 15px
     line-height: 31px
     font-weight: 300
     text-decoration: none
     &:hover
-      color: #fff
+      color: $text-color
 .subheader
   font-family: 'Roboto', serif
   min-height: 84px
   width: 100%
   background-color: rgba(0,0,0,.6)
-  color: #fff
+  color: $text-color
   position: absolute
-  &__container
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    padding: 0 96px
-  &__contact
-    display: flex
-    flex-wrap: wrap
   &__tel
-    padding: 23px 33px 0 0
+    margin-top: 23px
+    padding-right: 22px
   &__call
     font-size: 12px
     line-height: 12px
@@ -61,9 +56,9 @@
     text-transform: uppercase
     text-decoration: none
     text-align: right
-    color: #fff
+    color: $text-color
     &:hover
-      color: #fff
+      color: $text-color
 .logo
   padding-top: 17px
   min-width: 285px
@@ -74,7 +69,7 @@
     display: block
   &__text
     margin: 0
-    padding-top: 4px
+    padding-top: 2px
     opacity: .5
     font-size: 13px
     font-weight: 400
@@ -87,14 +82,14 @@
   font-size: 14px
   font-weight: 400
   text-transform: uppercase
-  color: #fff
+  color: $text-color
   box-shadow: inset 0 -3px rgba(0,0,0,.12)
   text-shadow: 1px 1px rgba(0,0,0,.21)
   cursor: pointer
   &_place_subheader
     height: 46px
     width: 172px
-    margin: 19px auto 0
+    margin: 19px 0 0 10px
     line-height: 15px
   &_place_promo
     display: block
@@ -113,14 +108,14 @@
     font-size: 60px
     line-height: 60px
     font-weight: 900
-    color: #fff
+    color: $text-color
     text-align: center
     margin: 0 0 10px
   &__subheader
     font-size: 36px
     line-height: 36px
     font-weight: 700
-    color: #fff
+    color: $text-color
     text-align: center
     margin: 0 0 21px
   &__text
@@ -128,6 +123,5 @@
     font-weight: 400
     line-height: 24px
     text-align: center
-    color: #fff
+    color: $text-color
     margin: 0 0 28px
-    padding: 0 78px
