@@ -1,6 +1,8 @@
 @import '_fonts'
 @import 'variables'
 
+.root
+  font-family: 'Roboto', serif
 .container
   max-width: 1166px
   margin: 0 auto
@@ -13,8 +15,10 @@
 .header
   position: relative
 .nav-menu
+  position: fixed
+  width: 100%
+  z-index: 2
   background-color: #212121
-  font-family: 'Roboto', serif
   min-height: 50px
   &__content
     display: flex
@@ -32,7 +36,7 @@
     &:hover
       color: $text-color
 .subheader
-  font-family: 'Roboto', serif
+  top: 50px
   min-height: 84px
   width: 100%
   background-color: rgba(0,0,0,.6)
@@ -77,7 +81,7 @@
 .button
   padding: 0
   border-radius: 4px
-  background: linear-gradient(0deg, $blue-color 0%, #4ce2ff 100%)
+  background: linear-gradient(0deg, $main-color 0%, #4ce2ff 100%)
   border: none
   font-size: 14px
   font-weight: 400
@@ -101,7 +105,6 @@
 .promo
   min-height: 800px
   box-sizing: border-box
-  font-family: 'Roboto', serif
   background: url('../../img/uber_bg.jpg') center center/cover no-repeat
   padding: 135px 0 186px
   &__header
@@ -127,6 +130,8 @@
     margin: 0 0 28px
 .reasons
   padding: 71px 0 65px 0
+  &__container
+    max-width: 1140px
   &__label
     @include section-label
   &__title
@@ -135,7 +140,12 @@
   display: flex
   justify-content: center
   align-items: center
-  margin-top: 35px
+  margin-bottom: 26px
+  padding: 0 6px 0 0
+  &:nth-of-type(7n)
+    margin-bottom: 0
+  &:last-of-type
+    margin-bottom: 0
   &__round
     display: flex
     justify-content: center
@@ -143,17 +153,19 @@
     margin-right: 26px
     width: 113px
     height: 113px
-    background-color: $blue-color
+    background-color: $main-color
     border-radius: 50%
   &__description
     width: 343px
   &__subtitle
     line-height: 21px
-    color: $blue-color
+    color: $main-color
     font-size: 17px
     font-weight: 400
+    margin: 0
   &__text
     color: #202020
     font-size: 15px
     font-weight: 300
     line-height: 21px
+    margin: 3px 0 0
