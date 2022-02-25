@@ -1,4 +1,5 @@
 $text-color: #fff
+$bg-color: #000
 $main-color: #1eacc7
 
 @mixin section-label
@@ -6,16 +7,26 @@ $main-color: #1eacc7
   height: 24px
   width: 112px
   padding: 5px 12px
-  background-color: #000
+  background-color: $bg-color
   color: $text-color
   font-size: 11px
   font-weight: 300
   text-transform: uppercase
   text-align: center
 @mixin section-title
-  margin: 35px 0 16px
+  margin: 35px 0 0
   color: #222
   font-size: 38px
   font-weight: 700
   text-transform: uppercase
   text-align: center
+@mixin section-subtitle
+  position: relative
+  margin: 2px 0 0 0
+  color: #222222
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+  z-index: 2
+  &_color_white
+    color: $text-color

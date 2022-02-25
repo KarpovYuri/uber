@@ -8,6 +8,8 @@
   margin: 0 auto
   box-sizing: border-box
   padding: 0
+  &_width_1140
+    max-width: 1140px
 .fade-opacity
   transition: opacity 0.25s
   &:hover
@@ -42,6 +44,7 @@
   background-color: rgba(0,0,0,.6)
   color: $text-color
   position: absolute
+  z-index: 1
   &__tel
     margin-top: 23px
     padding-right: 22px
@@ -69,7 +72,7 @@
   &__img
     height: 32px
     width: 100%
-    background: no-repeat url(../../../img/logo.png)
+    background: no-repeat url(../img/logo.png)
     display: block
   &__text
     margin: 0
@@ -105,8 +108,10 @@
 .promo
   min-height: 800px
   box-sizing: border-box
-  background: url('../../img/uber_bg.jpg') center center/cover no-repeat
+  background: url('../img/bg//uber_bg.jpg') center center/cover no-repeat
   padding: 135px 0 186px
+  position: relative
+  top: 50px
   &__header
     font-size: 60px
     line-height: 60px
@@ -129,13 +134,12 @@
     color: $text-color
     margin: 0 0 28px
 .reasons
-  padding: 71px 0 65px 0
-  &__container
-    max-width: 1140px
+  padding: 121px 0 65px 0
   &__label
     @include section-label
   &__title
     @include section-title
+    margin-bottom: 16px
 .reason-block
   display: flex
   justify-content: center
@@ -169,3 +173,55 @@
     font-weight: 300
     line-height: 21px
     margin: 3px 0 0
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/bg/mobile_bg.jpg') center (center / cover) no-repeat
+  &__label
+    @include section-label
+  &__title
+    @include section-title
+  &__subtitle
+    @include section-subtitle
+    margin-bottom: 30px
+.mobile-card
+  position: relative
+  width: 320px
+  height: 280px
+  margin: 0 auto
+  margin-bottom: 19px
+  padding-top: 92px
+  &_bg_1
+    background: url('../img/bg/mobile_bg_1.jpg') center (center / cover) no-repeat
+  &_bg_2
+    background: url('../img/bg/mobile_bg_2.jpg') center (center / cover) no-repeat
+  &_bg_3
+    background: url('../img/bg/mobile_bg_3.jpg') center (center / cover) no-repeat
+  &_bg_4
+    background: url('../img/bg/mobile_bg_4.jpg') center (center / cover) no-repeat
+  &_bg_5
+    background: url('../img/bg/mobile_bg_5.jpg') center (center / cover) no-repeat
+  &_bg_6
+    background: url('../img/bg/mobile_bg_6.jpg') center (center / cover) no-repeat
+  &__subtitle
+    color: $text-color
+    max-width: 289px
+    font-size: 24px
+    font-weight: 400
+    line-height: 26px
+    text-transform: uppercase
+    text-align: center
+  &__plus
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: 35px
+    left: 50%
+    transform: translateX(-50%)
+    width: 26px
+    height: 26px
+    background-color: $bg-color
+    margin: 0 auto
+    border-radius: 100%
+    cursor: pointer
