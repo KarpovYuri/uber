@@ -77,7 +77,7 @@
 .button
   padding: 0
   border-radius: 4px
-  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+  background: linear-gradient(0deg, $blue-color 0%, #4ce2ff 100%)
   border: none
   font-size: 14px
   font-weight: 400
@@ -125,3 +125,35 @@
     text-align: center
     color: $text-color
     margin: 0 0 28px
+.reasons
+  padding: 71px 0 65px 0
+  &__label
+    @include section-label
+  &__title
+    @include section-title
+.reason-block
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 35px
+  &__round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: $blue-color
+    border-radius: 50%
+  &__description
+    width: 343px
+  &__subtitle
+    line-height: 21px
+    color: $blue-color
+    font-size: 17px
+    font-weight: 400
+  &__text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
