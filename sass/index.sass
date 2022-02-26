@@ -4,12 +4,12 @@
 .root
   font-family: 'Roboto', serif
 .container
-  max-width: 1166px
+  max-width: 1140px
   margin: 0 auto
   box-sizing: border-box
   padding: 0
-  &_width_1140
-    max-width: 1140px
+  &_width_1166
+    max-width: 1166px
 .fade-opacity
   transition: opacity 0.25s
   &:hover
@@ -19,7 +19,7 @@
 .nav-menu
   position: fixed
   width: 100%
-  z-index: 2
+  z-index: 3
   background-color: #212121
   min-height: 50px
   &__content
@@ -105,6 +105,9 @@
     width: 259px
     font-size: 18px
     line-height: 67px
+  &:hover
+    background-image: none
+    background-color: $main-color
 .promo
   min-height: 800px
   box-sizing: border-box
@@ -225,6 +228,26 @@
     margin: 0 auto
     border-radius: 100%
     cursor: pointer
+    &:before
+      content: ''
+      display: block
+      width: 14px
+      height: 2px
+      background-color: $main-color
+      transition: .3s all
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      display: block
+      height: 14px
+      width: 2px
+      background-color: $main-color
+      transition: .3s all
+    &:hover
+      &:before, &:after
+        background-color: $second-color
 .choice
   position: relative
   min-height: 895px
@@ -266,3 +289,54 @@
   width: 100%
   background-color: #070716
   z-index: 1
+.require
+  padding: 68px 0 84px 0
+  &__label
+    @include section-label
+  &__title
+    @include section-title
+    margin-top: 30px
+.require-block
+  margin: 33px 0 7px
+  padding: 0 36px 0 20px
+  &:nth-of-type(3n)
+    margin-bottom: 0px
+  &:last-of-type
+    margin-bottom: 0px
+  &__title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+    margin-bottom: 0
+    &_warning
+      color: $second-color
+  &__list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 14px
+  &__list-item
+    position: relative
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    margin-bottom: 5px
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: -32px
+      top: 3px
+      width: 21px
+      height: 20px
+    &_safe
+      &:before
+        background: url('../img/icons/check_blue.svg') center (center / cover) no-repeat
+    &_warning
+      &:before
+        background: url('../img/icons/check_red.svg') center (center / cover) no-repeat
+  &__description
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: #1ca8c3
