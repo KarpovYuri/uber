@@ -225,3 +225,44 @@
     margin: 0 auto
     border-radius: 100%
     cursor: pointer
+.choice
+  position: relative
+  min-height: 895px
+  padding: 57px 0 138px 0
+  background: url('../img/bg/mobile_bg.jpg') center (center / cover) no-repeat
+  &__label
+    @include section-label
+    &_theme_dark
+      z-index: 2
+      position: relative
+      background-color: $text-color
+      color: $bg-color
+  &__title
+    @include section-title
+    &_theme_dark
+      @include theme-dark
+      margin-top: 28px
+  &__subtitle
+    @include section-subtitle
+    &_theme_dark
+      @include theme-dark
+  &__image
+    position: relative
+    display: block
+    margin: 56px auto 0 auto
+    z-index: 2
+  &__description
+    text-align: center
+    color: #222
+    font-size: 17px
+    font-weight: 300
+    line-height: 18px
+    margin-bottom: 7px
+.dark
+  position: absolute
+  top: 0
+  left: 0
+  height: 499px
+  width: 100%
+  background-color: #070716
+  z-index: 1
