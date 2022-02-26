@@ -304,7 +304,7 @@
   &:last-of-type
     margin-bottom: 0px
   &__title
-    color: #1ca8c3
+    color: $blue-color
     font-size: 22px
     font-weight: 400
     margin-bottom: 0
@@ -339,4 +339,41 @@
     font-size: 17px
     font-weight: 300
     line-height: 24px
-    color: #1ca8c3
+    color: $blue-color
+.world
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+  &__label
+    @include section-label
+    &_theme_dark
+      z-index: 2
+      position: relative
+      background-color: $text-color
+      color: $bg-color
+      width: 76px
+  &__title
+    @include section-title
+    margin-top: 29px
+    &_theme_dark
+      @include theme-dark
+  &__subtitle
+    @include section-subtitle
+    &_theme_dark
+      @include theme-dark
+  &__link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 22px
+    text-align: center
+    font-size: 15px
+    font-weight: 400
+    line-height: 68px
+    text-transform: uppercase
+    color: #1fbad6
+    text-decoration: none
+    transition: .3s all
+    &:hover
+      color: $text-color
