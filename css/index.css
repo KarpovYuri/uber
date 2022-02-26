@@ -693,4 +693,145 @@
 .world__link:hover {
   color: #fff;
 }
+
+.footer {
+  padding: 14px 23px 39px 23px;
+}
+
+.footer__divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 32px;
+}
+
+.social-block {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.social-block__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.social-block__link:hover {
+  color: #fff;
+}
+
+.navmenu-block {
+  width: 390px;
+  margin: 0 auto;
+}
+
+.navmenu-block__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.navmenu-block__main-link {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navmenu-block__main-link:hover {
+  color: #070716;
+}
+
+.navmenu-block__sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 7px;
+}
+
+.navmenu-block__sub-link {
+  color: #999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navmenu-block__sub-link:hover {
+  color: #999;
+}
+
+.navmenu-block__lang {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navmenu-block__lang:hover {
+  color: #1fbad6;
+}
+
+.mobile-block {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.mobile-block__link {
+  margin-right: 7px;
+}
+
+.mobile-block__link:last-of-type {
+  margin-right: 0;
+}
 /*# sourceMappingURL=index.css.map */
