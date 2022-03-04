@@ -94,3 +94,48 @@
   flex-wrap: wrap
 .mobile-block
   width: 16%
+@media (max-width: 767px)
+  .nav-menu
+    &__content
+      position: fixed
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      top: 0
+      left: -100%
+      width: 55%
+      height: 100vh
+      padding: 20px 15px
+      background-color: rgba(0,0,0, .95)
+      transition: .6s all
+      &_active
+        left: 0
+    &__item
+      margin: 18px 0
+      &:nth-of-type(2n)
+        display: none
+    &__link
+      font-size: 20px
+  .hamburger
+    display: block
+    position: absolute
+    right: 15px
+    top: 50%
+    transform: translateY(-50%)
+    width: 26px
+    height: 18px
+    &__line
+      display: block
+      height: 2px
+      width: 100%
+      background-color: $text-color
+      margin-bottom: 6px
+      transition: .5s all
+      &_active
+        margin-bottom: -2px
+        &:nth-child(1)
+          transform: translateY(8px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(8px) rotate(45deg)
