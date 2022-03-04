@@ -31,11 +31,9 @@
       margin: 2px auto 30px
   .mobile-card
     margin-bottom: 30px
-  .social-block
-    width: 28%
-  .mobile-block
-    width: 28%
-    flex-wrap: wrap
+  .social-block, .mobile-block
+    justify-content: center
+    margin-top: 25px
 @media (max-width: 991px)
   .logo
     padding: 17px 0 0 10px
@@ -74,27 +72,24 @@
     &__text
       font-size: 16px
       line-height: 22px
-.reasons, .mobile, .choice, .require, .world
-  &__title
-    font-size: 34px
-.mobile, .choice, .world
-  &__subtitle
-    font-size: 16px
-.choice
-  min-height: 800px
-  padding-bottom: 123px
-  &__image
-    max-width: 700px
-  &__description
-    font-size: 16px
-.world
-  min-height: 600px
-.social-block
-  width: 16%
-  flex-wrap: wrap
-.mobile-block
-  width: 16%
+  .reasons, .mobile, .choice, .require, .world
+    &__title
+      font-size: 34px
+  .mobile, .choice, .world
+    &__subtitle
+      font-size: 16px
+  .choice
+    min-height: 800px
+    padding-bottom: 123px
+    &__image
+      max-width: 700px
+    &__description
+      font-size: 16px
+  .world
+    min-height: 450px
 @media (max-width: 767px)
+  .logo
+    padding-left: 30px
   .nav-menu
     &__content
       position: fixed
@@ -116,6 +111,9 @@
         display: none
     &__link
       font-size: 20px
+      &:hover
+        color: $main-color
+        opacity: 1
   .hamburger
     display: block
     position: absolute
@@ -124,6 +122,7 @@
     transform: translateY(-50%)
     width: 26px
     height: 18px
+    cursor: pointer
     &__line
       display: block
       height: 2px
@@ -139,3 +138,70 @@
           display: none
         &:nth-child(3)
           transform: translateY(8px) rotate(45deg)
+  .subheader
+    &__phone
+      font-size: 18px
+      line-height: 18px
+  .subheader__tel
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 9px
+    padding-left: 50px
+  .button
+    &_place_subheader
+      height: 37px
+      width: 143px
+      margin: 8px 0 0
+      font-size: 13px
+      line-height: 13px
+    &_place_promo
+      margin-top: 94px
+      height: 51px
+      width: 210px
+      font-size: 16px
+      line-height: 51px
+  .xs-hidden
+    display: none
+  .xs-visible
+    display: block
+  .promo
+    min-height: 680px
+    padding-bottom: 112px
+    &__header
+      font-size: 36px
+      line-height: 36px
+    &__subheader
+      font-size: 22px
+      line-height: 28px
+      max-width: 330px
+    &__text
+      font-size: 14px
+      line-height: 20px
+  .reasons
+    padding-top: 100px
+  .reasons, .mobile, .choice, .require, .world
+    &__title
+      font-size: 26px
+  .mobile, .choice, .world
+    &__subtitle
+      font-size: 15px
+      max-width: 360px
+      margin: 2px auto 30px
+  .reason-block
+    margin-bottom: 50px
+    &:nth-of-type(7)
+      margin-bottom: 50px
+    &__round
+      margin-bottom: 0
+  .choice
+    min-height: 720px
+    padding-bottom: 100px
+    &__image
+      max-width: 530px
+    &__description
+      font-size: 15px
+  .world
+    min-height: 400px
+    &__link
+      font-size: 14px
