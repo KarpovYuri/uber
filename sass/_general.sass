@@ -8,7 +8,7 @@
   box-sizing: border-box
   padding: 0
 .fade-opacity
-  transition: opacity 0.25s
+  transition: 0.25s all
   &:hover
     opacity: 0.6
 .header
@@ -45,7 +45,7 @@
   position: absolute
   z-index: 1
   &__tel
-    margin-top: 21px
+    margin-top: 19px
     padding-right: 22px
   &__call
     font-size: 12px
@@ -53,7 +53,7 @@
     font-weight: 300
     text-align: right
     padding-bottom: 8px
-    margin: 0
+    margin: 2px 0 0
   &__phone
     display: block
     font-size: 22px
@@ -95,7 +95,7 @@
   &_place_subheader
     height: 46px
     width: 172px
-    margin: 19px 0 0 10px
+    margin: 0 0 0 10px
     line-height: 15px
   &_place_promo
     display: block
@@ -148,7 +148,7 @@
   align-items: center
   margin-bottom: 26px
   padding: 0 6px 0 0
-  &:nth-of-type(7n)
+  &:nth-of-type(7)
     margin-bottom: 0
   &:last-of-type
     margin-bottom: 0
@@ -178,7 +178,7 @@
 .mobile
   min-height: 864px
   padding: 48px 0 79px 0
-  background: url('../img/bg/mobile_bg.jpg') center (center / cover) no-repeat
+  background: url('../img/bg/mobile_bg.jpg') center center
   &__label
     @include section-label
   &__title
@@ -252,7 +252,7 @@
   position: relative
   min-height: 895px
   padding: 57px 0 138px 0
-  background: url('../img/bg/mobile_bg.jpg') center (center / cover) no-repeat
+  background: url('../img/bg/mobile_bg.jpg') center center
   &__label
     @include section-label
     &_theme_dark
@@ -385,28 +385,9 @@
     background-color: #1fbad6
     margin: 0 auto
   &__wrapper
-    display: flex
-    justify-content: space-between
-    align-items: flex-start
     padding-top: 32px
-.social-block
-  width: 33%
-  display: flex
-  justify-content: flex-start
-  &__link
-    display: flex
-    justify-content: center
-    align-items: center
-    margin: 4px 4px 0
-    width: 32px
-    height: 32px
-    background-color: #070716
-    border-radius: 100%
-    color: $text-color
-    &:hover
-      color: $text-color
 .navmenu-block
-  width: 390px
+  max-width: 390px
   margin: 0 auto
   &__main
     display: flex
@@ -445,9 +426,25 @@
     text-decoration: none
     &:hover
       color: #1fbad6
+.social-block
+  display: flex
+  justify-content: flex-start
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 4px 4px 0
+    width: 32px
+    height: 32px
+    background-color: #070716
+    border-radius: 100%
+    color: $text-color
+    &:hover
+      color: $text-color
 .mobile-block
-  width: 33%
   display: flex
   justify-content: flex-end
   &__link
     margin: 4px 7px 0 0
+.xs-visible
+  display: none

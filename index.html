@@ -41,15 +41,16 @@
 
     <section class="subheader">
       <div class="container row">
-        <div class="logo col-md-4 col-lg-5 col-xl-4 offset-xl-1">
+        <div class="logo col-6 col-md-4 col-lg-5 col-xl-4 offset-xl-1">
           <a href="#" aria-label="Логотип Uber" class="logo__img fade-opacity"></a>
           <p class="logo__text">Официальный партнер Uber в Москве</p>
         </div>
-        <div class="subheader__tel col-md-3 offset-md-1">
+        <div class="subheader__tel xs-hidden col-md-3 offset-md-1">
           <p class="subheader__call">Звоните нам ежедневно</p>
           <a href="tel:+74957970988" class="subheader__phone fade-opacity">8 495 797 09 88</a>
         </div>
-        <div class="col-md-4 col-lg-3">
+        <div class="subheader__tel col-6 col-md-4 col-lg-3">
+          <a href="tel:+74957970988" class="subheader__phone fade-opacity xs-visible">8 495 797 09 88</a>
           <button type="button" class="button button_place_subheader">Заказать звонок</button>
         </div>
       </div>
@@ -324,14 +325,8 @@
 
   <footer class="footer">
     <div class="footer__divider"></div>
-    <div class="footer__wrapper">
-      <div class="social-block">
-        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div class="navmenu-block">
+    <div class="footer__wrapper row">
+      <div class="navmenu-block col-12 col-xl-4 order-xl-2">
         <div class="navmenu-block__main">
           <a href="#" class="navmenu-block__main-link fade-opacity">на главную</a>
           <a href="#" class="navmenu-block__main-link fade-opacity">города</a>
@@ -346,7 +341,13 @@
         </div>
         <a href="#" class="navmenu-block__lang fade-opacity">Русский</a>
       </div>
-      <div class="mobile-block">
+      <div class="social-block col-12 col-xl-4 order-xl-1">
+        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="mobile-block col-12 col-xl-4 order-xl-3">
         <a href="#" class="mobile-block__link fade-opacity"><img src="img/app_store.png" alt="App Store"></a>
         <a href="#" class="mobile-block__link fade-opacity"><img src="img/google_play.png" alt="Google play"></a>
         <a href="#" class="mobile-block__link fade-opacity"><img src="img/windows_store.png" alt="Windows store"></a>
