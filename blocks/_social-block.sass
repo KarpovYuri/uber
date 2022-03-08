@@ -1,0 +1,24 @@
+.social-block
+  display: flex
+  justify-content: flex-start
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 4px 4px 0
+    width: 32px
+    height: 32px
+    background-color: #070716
+    border-radius: 100%
+    color: $text-color
+    &:hover
+      color: $text-color
+
+@media (max-width: 1199px)
+  .social-block
+    justify-content: center
+    margin-top: 25px
+
+@media (max-width: 575px)
+  .social-block
+    margin-top: 16px

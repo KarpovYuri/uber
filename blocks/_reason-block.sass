@@ -1,0 +1,65 @@
+.reason-block
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 26px
+  padding: 0 6px 0 0
+  &:nth-of-type(7)
+    margin-bottom: 0
+  &:last-of-type
+    margin-bottom: 0
+  &__round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: $main-color
+    border-radius: 50%
+  &__description
+    max-width: 350px
+  &__subtitle
+    line-height: 21px
+    color: $main-color
+    font-size: 17px
+    font-weight: 400
+    margin: 0
+  &__text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+    margin: 3px 0 0
+
+@media (max-width: 1199px)
+  .reason-block
+    flex-direction: column
+    justify-content: flex-start
+    padding-left: 6px
+    &__round
+      margin-bottom: 26px
+
+@media (max-width: 767px)
+  .reason-block
+    flex-direction: row
+    justify-content: center
+    margin-bottom: 50px
+    &:nth-of-type(7)
+      margin-bottom: 50px
+    &__round
+      margin-bottom: 0
+
+@media (max-width: 575px)
+  .reason-block
+    margin-bottom: 50px
+    padding: 0 14px 0 16px
+    flex-direction: column
+    justify-content: flex-start
+    &__subtitle
+      font-size: 16px
+    &__round
+      width: 100px
+      height: 100px
+      margin-bottom: 24px
+      margin-right: 0

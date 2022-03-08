@@ -1,0 +1,75 @@
+.world
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+  &__label
+    @include section-label
+    &_theme_dark
+      z-index: 2
+      position: relative
+      background-color: $text-color
+      color: $bg-color
+      width: 76px
+  &__title
+    @include section-title
+    margin-top: 29px
+    &_theme_dark
+      @include theme-dark
+  &__subtitle
+    @include section-subtitle
+    &_theme_dark
+      @include theme-dark
+  &__link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 22px
+    text-align: center
+    font-size: 15px
+    font-weight: 400
+    line-height: 68px
+    text-transform: uppercase
+    color: #1fbad6
+    text-decoration: none
+    transition: .3s all
+    &:hover
+      color: $text-color
+
+@media (max-width: 991px)
+  .world
+    &__title
+      font-size: 34px
+
+@media (max-width: 991px)
+  .world
+    min-height: 450px
+    &__subtitle
+      font-size: 16px
+
+@media (max-width: 767px)
+  .world
+    min-height: 400px
+    &__title
+      font-size: 26px
+    &__subtitle
+      font-size: 15px
+      max-width: 360px
+      margin: 2px auto 30px
+    &__link
+      font-size: 14px
+
+@media (max-width: 575px)
+  .world
+    padding: 24px 0 29px 0
+    min-height: 360px
+    &__title
+      font-size: 16px
+      margin: 16px 0 0
+    &__subtitle
+      font-size: 14px
+      margin: 11px auto 0
+    &__link
+      line-height: 14px
+      width: 182px
+      bottom: 29px

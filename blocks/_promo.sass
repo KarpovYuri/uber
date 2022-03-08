@@ -1,0 +1,86 @@
+.promo
+  min-height: 800px
+  box-sizing: border-box
+  background: url('../img/bg//uber_bg.jpg') center center/cover no-repeat
+  padding: 135px 0 186px
+  position: relative
+  top: 50px
+  &__header
+    font-size: 60px
+    line-height: 60px
+    font-weight: 900
+    color: $text-color
+    text-align: center
+    margin: 0 0 10px
+  &__subheader
+    font-size: 36px
+    line-height: 36px
+    font-weight: 700
+    color: $text-color
+    text-align: center
+    margin: 0 0 21px
+  &__text
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    color: $text-color
+    margin: 0 0 28px
+
+@media (max-width: 1199px)
+  .promo
+    padding-bottom: 155px
+    &__header
+      font-size: 54px
+      line-height: 54px
+    &__subheader
+      font-size: 32px
+      line-height: 38px
+      max-width: 450px
+      margin: 0 auto 21px
+
+@media (max-width: 991px)
+  .promo
+    min-height: 750px
+    padding-bottom: 138px
+    &__header
+      font-size: 40px
+      line-height: 40px
+    &__subheader
+      font-size: 24px
+      line-height: 32px
+      max-width: 360px
+    &__text
+      font-size: 16px
+      line-height: 22px
+
+@media (max-width: 767px)
+  .promo
+    top: 32px
+    min-height: 680px
+    padding-bottom: 112px
+    &__header
+      font-size: 36px
+      line-height: 36px
+    &__subheader
+      font-size: 22px
+      line-height: 28px
+      max-width: 330px
+    &__text
+      font-size: 14px
+      line-height: 20px
+
+@media (max-width: 575px)
+  .promo
+    min-height: 400px
+    padding: 105px 0 0
+    &__header
+      font-size: 30px
+      line-height: 35px
+      max-width: 245px
+      margin: 0 auto 24px
+    &__subheader
+      font-size: 20px
+      line-height: 23px
+    &__text
+      display: none

@@ -1,0 +1,53 @@
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/bg/mobile_bg.jpg') center center
+  &__label
+    @include section-label
+  &__title
+    @include section-title
+  &__subtitle
+    @include section-subtitle
+    margin-bottom: 30px
+
+@media (max-width: 1199px)
+  .mobile
+    &__subtitle
+      max-width: 500px
+      margin: 2px auto 30px
+
+@media (max-width: 991px)
+  .mobile
+    &__title
+      font-size: 34px
+
+@media (max-width: 991px)
+  .mobile
+    &__subtitle
+      font-size: 16px
+
+@media (max-width: 767px)
+  .mobile
+    &__title
+      font-size: 26px
+    &__subtitle
+      font-size: 15px
+      max-width: 360px
+      margin: 2px auto 30px
+
+@media (max-width: 575px)
+  .mobile
+    padding: 28px 0 13px 0
+    &__title
+      font-size: 16px
+      margin: 16px 0 10px
+    &__subtitle
+      font-size: 14px
+      max-width: 293px
+      margin-bottom: 27px
+    &-card
+      width: 290px
+      height: 254px
+      &__subtitle
+        font-size: 18px
+        max-width: 200px
