@@ -818,14 +818,6 @@
     max-width: 293px;
     margin-bottom: 27px;
   }
-  .mobile-card {
-    width: 290px;
-    height: 254px;
-  }
-  .mobile-card__subtitle {
-    font-size: 18px;
-    max-width: 200px;
-  }
 }
 
 .mobile-card {
@@ -926,6 +918,17 @@
 @media (max-width: 1199px) {
   .mobile-card {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mobile-card {
+    width: 290px;
+    height: 254px;
+  }
+  .mobile-card__subtitle {
+    font-size: 18px;
+    max-width: 200px;
   }
 }
 
