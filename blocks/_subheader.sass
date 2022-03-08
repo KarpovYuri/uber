@@ -1,0 +1,67 @@
+.subheader
+  top: 50px
+  min-height: 84px
+  width: 100%
+  background-color: rgba(0,0,0,.6)
+  color: $text-color
+  position: absolute
+  z-index: 1
+  &__tel
+    margin-top: 19px
+    padding-right: 22px
+  &__call
+    font-size: 12px
+    line-height: 12px
+    font-weight: 300
+    text-align: right
+    padding-bottom: 8px
+    margin: 2px 0 0
+  &__phone
+    display: block
+    font-size: 22px
+    line-height: 22px
+    font-weight: 400
+    text-transform: uppercase
+    text-decoration: none
+    text-align: right
+    color: $text-color
+    &:hover
+      color: $text-color
+    &_visible
+      display: none
+
+@media (max-width: 991px)
+  .subheader
+    &__phone
+      font-size: 20px
+      line-height: 20px
+    &__tel
+      padding-right: 0
+
+@media (max-width: 767px)
+  .subheader
+    top: 32px
+    &__phone
+      font-size: 18px
+      line-height: 18px
+      &_visible
+        display: block
+    &__tel
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      margin-top: 9px
+      padding-left: 50px
+      &_hidden
+        display: none
+
+@media (max-width: 575px)
+  .subheader
+    min-height: 62px
+    &__phone
+      font-size: 12px
+      line-height: 12px
+    &__tel
+      flex-basis: 130px
+      padding: 0 6px 0 0
+      margin-top: 12px

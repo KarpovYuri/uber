@@ -40,17 +40,17 @@
     </nav>
 
     <section class="subheader">
-      <div class="container row">
+      <div class="container row justify-content-between">
         <div class="logo col-6 col-md-4 col-lg-5 col-xl-4 offset-xl-1">
           <a href="#" aria-label="Логотип Uber" class="logo__img fade-opacity"></a>
           <p class="logo__text">Официальный партнер Uber в Москве</p>
         </div>
-        <div class="subheader__tel xs-hidden col-md-3 offset-md-1">
+        <div class="subheader__tel subheader__tel_hidden col-md-3 offset-md-1">
           <p class="subheader__call">Звоните нам ежедневно</p>
           <a href="tel:+74957970988" class="subheader__phone fade-opacity">8 495 797 09 88</a>
         </div>
         <div class="subheader__tel col-6 col-md-4 col-lg-3">
-          <a href="tel:+74957970988" class="subheader__phone fade-opacity xs-visible">8 495 797 09 88</a>
+          <a href="tel:+74957970988" class="subheader__phone fade-opacity subheader__phone_visible">8 495 797 09 88</a>
           <button type="button" class="button button_place_subheader">Заказать звонок</button>
         </div>
       </div>
@@ -235,7 +235,7 @@
 
   <section class="choice">
     <div class="container">
-      <div class="dark"></div>
+      <div class="choice__dark"></div>
       <div class="choice__label choice__label_theme_dark">возможности</div>
       <h2 class="choice__title choice__title_theme_dark">Выбор - отличная штука!</h2>
       <h3 class="choice__subtitle choice__subtitle_theme_dark">
@@ -348,9 +348,15 @@
         <a href="#" class="social-block__link fade-opacity"><i class="fa-brands fa-instagram"></i></a>
       </div>
       <div class="mobile-block col-12 col-xl-4 order-xl-3">
-        <a href="#" class="mobile-block__link fade-opacity"><img src="img/app_store.png" alt="App Store"></a>
-        <a href="#" class="mobile-block__link fade-opacity"><img src="img/google_play.png" alt="Google play"></a>
-        <a href="#" class="mobile-block__link fade-opacity"><img src="img/windows_store.png" alt="Windows store"></a>
+        <a href="#" class="mobile-block__link fade-opacity">
+          <img class="mobile-block__img" src="img/app_store.png" alt="App Store">
+        </a>
+        <a href="#" class="mobile-block__link fade-opacity">
+          <img class="mobile-block__img" src="img/google_play.png" alt="Google play">
+        </a>
+        <a href="#" class="mobile-block__link fade-opacity">
+          <img class="mobile-block__img" src="img/windows_store.png" alt="Windows store">
+        </a>
       </div>
     </div>
   </footer>

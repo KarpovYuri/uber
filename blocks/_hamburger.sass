@@ -1,0 +1,28 @@
+.hamburger
+  display: none
+  position: absolute
+  right: 11px
+  top: 50%
+  transform: translateY(-50%)
+  width: 26px
+  height: 10px
+  cursor: pointer
+  &__line
+    display: block
+    height: 2px
+    width: 100%
+    background-color: $text-color
+    margin-bottom: 2px
+    transition: .5s all
+    &_active
+      margin-bottom: -2px
+      &:nth-child(1)
+        transform: translateY(4px) rotate(-45deg)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        transform: translateY(4px) rotate(45deg)
+
+@media (max-width: 767px)
+  .hamburger
+    display: block

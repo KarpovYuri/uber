@@ -1,0 +1,24 @@
+.require
+  padding: 68px 0 84px 0
+  &__label
+    @include section-label
+  &__title
+    @include section-title
+    margin-top: 30px
+
+@media (max-width: 991px)
+  .require
+    &__title
+      font-size: 34px
+
+@media (max-width: 767px)
+  .require
+    &__title
+      font-size: 26px
+
+@media (max-width: 575px)
+  .require
+    padding: 22px 0 30px 0
+    &__title
+      font-size: 16px
+      margin: 16px 0 0

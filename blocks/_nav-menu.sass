@@ -1,0 +1,76 @@
+.nav-menu
+  position: fixed
+  width: 100%
+  z-index: 3
+  background-color: #212121
+  min-height: 50px
+  &__content
+    display: flex
+    justify-content: space-between
+    padding: 9px 98px 9px 83px
+    list-style-type: none
+  &__item:nth-of-type(2n)
+    border-right: black 2px dotted
+  &__link
+    color: $text-color
+    font-size: 15px
+    line-height: 31px
+    font-weight: 300
+    text-decoration: none
+    &:hover
+      color: $text-color
+
+@media (max-width: 1399px)
+  .nav-menu
+    &__content
+      padding-right: 73px
+  .logo
+    padding-left: 4px
+
+@media (max-width: 1199px)
+  .nav-menu
+    &__content
+      padding: 9px 40px 9px 50px
+
+@media (max-width: 991px)
+  .nav-menu
+    &__content
+      padding: 9px 0
+    &__link
+      font-size: 14px
+
+@media (max-width: 767px)
+  .nav-menu
+    min-height: 32px
+    &__content
+      position: fixed
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      top: 0
+      left: -100%
+      width: 55%
+      height: 100vh
+      padding: 20px 15px
+      background-color: rgba(0,0,0, .95)
+      transition: .6s all
+      &_active
+        left: 0
+    &__item
+      margin: 18px 0
+      &:nth-of-type(2n)
+        display: none
+    &__link
+      font-size: 20px
+      &:hover
+        color: $main-color
+        opacity: 1
+
+@media (max-width: 575px)
+  .nav-menu
+    &__content
+      width: 70%
+    &__item
+      margin: 10px 0
+    &__link
+      font-size: 16px

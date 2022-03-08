@@ -1,0 +1,66 @@
+.mobile-card
+  position: relative
+  width: 320px
+  height: 280px
+  margin: 0 auto
+  margin-bottom: 19px
+  padding-top: 92px
+  &_bg_1
+    background: url('../img/bg/mobile_bg_1.jpg') center (center / cover) no-repeat
+  &_bg_2
+    background: url('../img/bg/mobile_bg_2.jpg') center (center / cover) no-repeat
+  &_bg_3
+    background: url('../img/bg/mobile_bg_3.jpg') center (center / cover) no-repeat
+  &_bg_4
+    background: url('../img/bg/mobile_bg_4.jpg') center (center / cover) no-repeat
+  &_bg_5
+    background: url('../img/bg/mobile_bg_5.jpg') center (center / cover) no-repeat
+  &_bg_6
+    background: url('../img/bg/mobile_bg_6.jpg') center (center / cover) no-repeat
+  &__subtitle
+    color: $text-color
+    max-width: 289px
+    font-size: 24px
+    font-weight: 400
+    line-height: 26px
+    text-transform: uppercase
+    text-align: center
+    margin: 0 auto
+  &__plus
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: 35px
+    left: 50%
+    transform: translateX(-50%)
+    width: 26px
+    height: 26px
+    background-color: $bg-color
+    margin: 0 auto
+    border-radius: 100%
+    cursor: pointer
+    &:before
+      content: ''
+      display: block
+      width: 14px
+      height: 2px
+      background-color: $main-color
+      transition: .3s all
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      display: block
+      height: 14px
+      width: 2px
+      background-color: $main-color
+      transition: .3s all
+    &:hover
+      &:before, &:after
+        background-color: $second-color
+
+@media (max-width: 1199px)
+  .mobile-card
+    margin-bottom: 30px
