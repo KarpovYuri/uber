@@ -10,7 +10,7 @@
   <title>Uber</title>
   <link rel="stylesheet" href="vendor/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="pages/index.css">
   <script src="https://kit.fontawesome.com/f5f7ca03db.js" crossorigin="anonymous"></script>
 </head>
 
@@ -51,7 +51,7 @@
         </div>
         <div class="subheader__tel col-6 col-md-4 col-lg-3">
           <a href="tel:+74957970988" class="subheader__phone fade-opacity subheader__phone_visible">8 495 797 09 88</a>
-          <button type="button" class="button button_place_subheader">Заказать звонок</button>
+          <button type="button" class="button button_place_subheader" id="orderCall">Заказать звонок</button>
         </div>
       </div>
     </section>
@@ -73,7 +73,7 @@
           Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас
           зарабатывают от 80000- 120000 в месяц.
         </p>
-        <button type="button" class="button button_place_promo">ОТПРАВИТЬ ЗАЯВКУ!</button>
+        <button type="button" class="button button_place_promo" id="sendRequest">ОТПРАВИТЬ ЗАЯВКУ!</button>
       </div>
     </div>
   </section>
@@ -361,7 +361,29 @@
     </div>
   </footer>
 
-  <script src="js/index.js"></script>
+  <article class="popup" id="formPopup">
+    <div class="popup__container">
+      <h2 class="popup__title"></h2>
+      <form class="popup__form" name="popupForm" novalidate>
+        <input type="text" placeholder="Имя" class="popup__field" id="nameInput" name="name" required minlength="2"
+          maxlength="40" autocomplete="off">
+        <span class="popup__input-error nameInput-error"></span>
+        <input type="tel" placeholder="+7-999-999-99-99" pattern="\+\d-\d{3}-\d{3}-\d{2}-\d{2}" class="popup__field"
+          id="phoneInput" name="phone" required autocomplete="off">
+        <span class="popup__input-error phoneInput-error"></span>
+        <button type="submit" aria-label="Кнопка заказать звонок" class="popup__button"></button>
+      </form>
+      <button type="button" aria-label="Кнопка закрытия окна" class="popup__close-button fade-opacity"></button>
+    </div>
+  </article>
+
+  <article class="popup" id="messagePopup">
+    <div class="popup__container">
+      <h2 class="popup__title">В ближайшее время мы с вами свяжемся</h2>
+    </div>
+  </article>
+
+  <script type="module" src="pages/index.js"></script>
 </body>
 
 </html>
