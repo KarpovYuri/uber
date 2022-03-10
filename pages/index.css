@@ -51,8 +51,10 @@
   transition: 0.25s all;
 }
 
-.fade-opacity:hover {
-  opacity: 0.6;
+@media (min-width: 576px) {
+  .fade-opacity:hover {
+    opacity: 0.6;
+  }
 }
 
 .nav-menu {
@@ -143,13 +145,17 @@
     left: 0;
   }
   .nav-menu__item {
-    margin: 18px 0;
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
   }
   .nav-menu__item:nth-of-type(2n) {
     display: none;
   }
   .nav-menu__link {
+    padding: 10px 0;
     font-size: 20px;
+    display: block;
   }
   .nav-menu__link:hover {
     color: #1eacc7;
@@ -162,9 +168,10 @@
     width: 75%;
   }
   .nav-menu__item {
-    margin: 10px 0;
+    margin: 5px 0;
   }
   .nav-menu__link {
+    padding: 5px 0;
     font-size: 16px;
   }
 }
@@ -394,6 +401,7 @@
           box-shadow: inset 0 -3px rgba(0, 0, 0, 0.12);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.21);
   cursor: pointer;
+  outline: none;
 }
 
 .button_place_subheader {
@@ -412,17 +420,19 @@
   line-height: 67px;
 }
 
-.button:hover {
-  background-image: none;
-  background-color: #1eacc7;
-}
-
 @media (max-width: 991px) {
   .button_place_subheader {
     margin-left: 35px;
   }
   .button_place_promo {
     margin-top: 100px;
+  }
+}
+
+@media (min-width: 576px) {
+  .button:hover {
+    background-image: none;
+    background-color: #1eacc7;
   }
 }
 
@@ -911,13 +921,15 @@
   transition: .3s all;
 }
 
-.mobile-card__plus:hover:before, .mobile-card__plus:hover:after {
-  background-color: #ff5656;
-}
-
 @media (max-width: 1199px) {
   .mobile-card {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .mobile-card__plus:hover:before, .mobile-card__plus:hover:after {
+    background-color: #ff5656;
   }
 }
 
@@ -1304,7 +1316,7 @@
 }
 
 .world__link:hover {
-  color: #fff;
+  color: #1fbad6;
 }
 
 @media (max-width: 991px) {
@@ -1336,6 +1348,12 @@
   }
   .world__link {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  .world__link:hover {
+    color: #fff;
   }
 }
 
@@ -1672,6 +1690,7 @@
           box-shadow: inset 0 -3px rgba(0, 0, 0, 0.12);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.21);
   cursor: pointer;
+  outline: none;
   display: block;
   position: relative;
   margin: 16px auto 0;

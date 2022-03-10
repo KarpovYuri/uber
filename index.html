@@ -8,6 +8,7 @@
     content="Проект для закрепления материала пройденного в Яндекс.Практикуме на курсе WEB-разработка">
   <meta name="author" content="Карпов Юрий">
   <title>Uber</title>
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="vendor/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
   <link rel="stylesheet" href="pages/index.css">
@@ -20,17 +21,20 @@
 
     <nav class="nav-menu">
       <ul class="container nav-menu__content">
-        <li class="nav-menu__item"><a href="#" class="nav-menu__link fade-opacity">Главная</a></li>
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link fade-opacity">Главная</a></li>
         <li class="nav-menu__item"></li>
-        <li class="nav-menu__item"><a href="#" class="nav-menu__link fade-opacity">Со своим автомобилем</a></li>
+        <li class="nav-menu__item"><a href="#your-car" class="nav-menu__link fade-opacity">Со своим автомобилем</a></li>
         <li class="nav-menu__item"></li>
-        <li class="nav-menu__item"><a href="#" class="nav-menu__link fade-opacity">На автомобиле компании</a></li>
+        <li class="nav-menu__item"><a href="#company-car" class="nav-menu__link fade-opacity">На автомобиле компании</a>
+        </li>
         <li class="nav-menu__item"></li>
-        <li class="nav-menu__item"><a href="#" class="nav-menu__link fade-opacity">Требования</a></li>
+        <li class="nav-menu__item"><a href="#requirements" class="nav-menu__link fade-opacity">Требования</a></li>
         <li class="nav-menu__item"></li>
-        <li class="nav-menu__item"><a href="#" class="nav-menu__link fade-opacity">Контакты</a></li>
+        <li class="nav-menu__item"><a href="#contact" class="nav-menu__link fade-opacity">Контакты</a></li>
         <li class="nav-menu__item"></li>
-        <li class="nav-menu__item"><a href="#" class="nav-menu__link fade-opacity">Оставь заявку</a></li>
+        <li class="nav-menu__item">
+          <a href="#" class="nav-menu__link fade-opacity" id="leaveRequest">Оставь заявку</a>
+        </li>
       </ul>
       <div class="hamburger">
         <span class="hamburger__line"></span>
@@ -42,7 +46,7 @@
     <section class="subheader">
       <div class="container row justify-content-between">
         <div class="logo col-6 col-md-4 col-lg-5 col-xl-4 offset-xl-1">
-          <a href="#" aria-label="Логотип Uber" class="logo__img fade-opacity"></a>
+          <a href="index.html" aria-label="Логотип Uber" class="logo__img fade-opacity"></a>
           <p class="logo__text">Официальный партнер Uber в Москве</p>
         </div>
         <div class="subheader__tel subheader__tel_hidden col-md-3 offset-md-1">
@@ -247,10 +251,10 @@
     </div>
   </section>
 
-  <section class="require">
+  <section class="require" id="for-drivers">
     <div class="container">
       <div class="require__label">возможности</div>
-      <h2 class="require__title">условия и требования</h2>
+      <h2 class="require__title" id="your-car">условия и требования</h2>
       <div class="row">
         <div class="require-block col-md-6">
           <h3 class="require-block__title">УСЛОВИЯ: со своим авто:</h3>
@@ -270,15 +274,16 @@
               Деньги перечисляем на карту водителю или наличными в офисе
             </li>
           </ul>
-          <p class="require-block__description">В день заработок составляет 7000-12000 рублей + бонус 3000 тыс. рублей
+          <p class="require-block__description">В день заработок составляет 7000-12000 рублей + бонус
+            3000 тыс. рублей
           </p>
         </div>
-        <div class="require-block col-md-6">
+        <div class="require-block col-md-6" id="company-car">
           <h3 class="require-block__title">УСЛОВИЯ: на авто компании:</h3>
           <ul class="require-block__list">
             <li class="require-block__list-item require-block__list-item_safe">Предоставляем авто без залога</li>
             <li class="require-block__list-item require-block__list-item_safe">Без ежедневных выплат по аренде</li>
-            <li class="require-block__list-item require-block__list-item_safe">
+            <li class="require-block__list-item require-block__list-item_safe" id="requirements">
               Среда пятница и суббота работа на компанию остальные дни вы работаете на себя
             </li>
           </ul>
@@ -314,7 +319,7 @@
     </div>
   </section>
 
-  <section class="world">
+  <section class="world" id="cities">
     <div class="container">
       <div class="world__label world__label_theme_dark">города</div>
       <h2 class="world__title world__title_theme_dark">По всему миру</h2>
@@ -323,14 +328,14 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer__divider"></div>
     <div class="footer__wrapper row">
       <div class="navmenu-block col-12 col-xl-4 order-xl-2">
         <div class="navmenu-block__main">
-          <a href="#" class="navmenu-block__main-link fade-opacity">на главную</a>
-          <a href="#" class="navmenu-block__main-link fade-opacity">города</a>
-          <a href="#" class="navmenu-block__main-link fade-opacity">для водителей</a>
+          <a href="index.html" class="navmenu-block__main-link fade-opacity">на главную</a>
+          <a href="#cities" class="navmenu-block__main-link fade-opacity">города</a>
+          <a href="#for-drivers" class="navmenu-block__main-link fade-opacity">для водителей</a>
         </div>
         <div class="navmenu-block__sub">
           <a href="#" class="navmenu-block__sub-link fade-opacity">центр поддержки</a>

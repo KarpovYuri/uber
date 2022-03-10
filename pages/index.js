@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Переменные для работы с модальным окном
   const buttons = document.querySelectorAll('button');
+  const leaveRequest = document.querySelector('#leaveRequest');
   const formPopup = document.querySelector('#formPopup');
   const popupTitle = formPopup.querySelector('.popup__title');
   const closeButton = formPopup.querySelector('.popup__close-button');
@@ -64,7 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
       popupTitle.textContent = 'Заказать звонок';
       popupButton.textContent = 'Заказать';
     }
-    if (event.target.id === 'sendRequest') {
+    if (event.target.id === 'sendRequest' || event.target.id === 'leaveRequest') {
       popupTitle.textContent = 'Отправить заявку';
       popupButton.textContent = 'Отправить';
     }
@@ -76,15 +77,30 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
+
+  // Проверка input'ов на пустоту
+  function checkEmptyField() {
+    if (nameInput.value === '' && phoneInput.value === '') {
+      Validator.resetFormError();
+      Validator.toggleButtonState();
+    }
+  }
+
+
   // Установка обработчиков на кнопки 'Заказать звонок' и 'Отправить заявку'
   buttons.forEach((item) => {
     item.addEventListener('click', (event) => {
-      if (nameInput.value === '' && phoneInput.value === '') {
-        Validator.resetFormError();
-        Validator.toggleButtonState();
-      }
+      checkEmptyField();
       openPopup(event, formPopup);
     });
+  });
+
+
+  // Установка обработчика на пункт меню 'Оставь заявку'
+  leaveRequest.addEventListener('click', (event) => {
+    event.preventDefault();
+    checkEmptyField();
+    openPopup(event, formPopup);
   });
 
 
