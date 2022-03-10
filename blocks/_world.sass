@@ -34,7 +34,7 @@
     text-decoration: none
     transition: .3s all
     &:hover
-      color: $text-color
+      color: #1fbad6
 
 @media (max-width: 991px)
   .world
@@ -58,6 +58,12 @@
       margin: 2px auto 30px
     &__link
       font-size: 14px
+
+@media (min-width: 576px)
+  .world
+    &__link
+      &:hover
+        color: $text-color
 
 @media (max-width: 575px)
   .world

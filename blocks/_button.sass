@@ -12,9 +12,6 @@
     width: 259px
     font-size: 18px
     line-height: 67px
-  &:hover
-    background-image: none
-    background-color: $main-color
 
 @media (max-width: 991px)
   .button
@@ -22,6 +19,12 @@
       margin-left: 35px
     &_place_promo
       margin-top: 100px
+
+@media (min-width: 576px)
+  .button
+    &:hover
+      background-image: none
+      background-color: $main-color
 
 @media (max-width: 767px)
   .button

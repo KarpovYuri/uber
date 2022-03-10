@@ -57,13 +57,17 @@
       width: 2px
       background-color: $main-color
       transition: .3s all
-    &:hover
-      &:before, &:after
-        background-color: $second-color
 
 @media (max-width: 1199px)
   .mobile-card
     margin-bottom: 30px
+
+@media (min-width: 576px)
+  .mobile-card
+    &__plus
+      &:hover
+        &:before, &:after
+          background-color: $second-color
 
 @media (max-width: 575px)
   .mobile-card
